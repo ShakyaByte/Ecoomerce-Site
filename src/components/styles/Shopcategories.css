@@ -1,0 +1,249 @@
+.custom {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: "0.5rem 0";
+  margin: 0;
+  font-size: 20px !important;
+  position: absolute;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.cards {
+  position: relative;
+  width: 17%;
+  padding: 0;
+  border-radius: 10px !important;
+}
+
+.card-img-top {
+  border-radius: 15px !important;
+  cursor: pointer;
+}
+
+.cards:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.custom-gap {
+  gap: 3rem; /* Adjust the gap size as needed */
+  margin-top: 30px !important;
+}
+
+.container shop {
+  padding-top: 25px !important;
+  margin-top: 30px !important;
+}
+
+.custom-image {
+  filter: grayscale(30%) contrast(1.2) brightness(1.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-image:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%) contrast(1.0) brightness(1.0);
+}
+
+.carousel {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.dealstext {
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.container.features {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding: 52px 15px !important;
+  margin-top: 5rem !important;
+}
+
+.custom-col {
+  width: 19% !important;
+  margin-right: 20px !important;
+}
+
+.head {
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.3;
+}
+
+.features-p {
+  font-family: 'Lato Light';
+  font-weight: lighter;
+  line-height: 1.6;
+  color: #333;
+  font-size: 1rem;
+}
+
+.carousel-control-next-icon {
+  background-color: black !important;
+}
+
+.carousel-control-prev-icon {
+  background-color: black !important;
+}
+
+#shop-h2{
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+@media (max-width: 1400px) {
+  .container.shop {
+    margin: 0 5px !important;
+    max-width: 98% !important;
+    padding-left: 3rem !important;
+  }
+
+  .custom-gap {
+    gap: 2rem !important;
+  }
+}
+
+@media (max-width: 931px) {
+  .cards {
+    width: 30%;
+  }
+
+  .container.shop {
+    padding-bottom: 10px !important;
+    height: 800px !important;
+  }
+
+  #electronic-cards {
+    height: 321px !important;
+  }
+}
+
+@media (max-width: 699px) {
+  .cards {
+    width: 42% !important;
+  }
+
+  .container.shop {
+    height: 1000px !important;
+    padding-right: 0 !important;
+    width: 95% !important;
+  }
+
+  .custom-gap {
+    padding-left: 9% !important;
+  }
+
+  #electronic-cards {
+    height: 275px !important;
+  }
+
+  #shoes-cards {
+    height: 275px !important;
+    margin-left: 20% !important;
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .cards {
+    width: 70% !important; /* Set card width to 80% of the container */
+    height: 280px !important; /* Set card height to 350px */
+    margin-bottom: 20px; /* Add space between cards */
+    overflow: hidden; 
+  }
+
+  .cards img {
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover; 
+  }
+
+  .container.shop {
+    height: auto !important; /* Adjust height to fit content */
+    padding: 20px !important; 
+    padding-bottom: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .custom-gap {
+    gap: 0 !important; /* Remove gap for vertical layout */
+    padding-left: 0 !important; /* Remove left padding */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
+  }
+
+  #electronic-cards,
+  #shoes-cards {
+    height: 280px !important; /* Set height to 350px */
+    margin-left: 0 !important; /* Remove left margin */
+    width: 70% !important; /* Set card width to 80% of the container */
+  }
+
+  /*for features*/
+ 
+
+  .custom-col {
+    width: 100% !important; /* Full width for each column */
+    margin-right: 0 !important; /* Remove margin between columns */
+    margin-bottom: 20px; /* Add space between stacked columns */
+    padding: 0px 20px !important;
+  }
+
+  .head {
+    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  .features-p {
+    font-size: 0.9rem; /* Adjust paragraph text size for smaller screens */
+  }
+
+  .icon-style {
+    font-size: 1.5rem; /* Adjust icon size for smaller screens */
+  }
+
+
+}
+
+@media (max-width: 700px) {
+  .container.features {
+    padding-left: 0 !important; /* Remove left padding */
+    padding-right: 0 !important; /* Remove right padding */
+  }
+
+  .row.text-center.mx-5 {
+    margin-left: 0 !important; /* Remove left margin */
+    margin-right: 0 !important; /* Remove right margin */
+  }
+
+  .custom-col {
+    width: 100% !important; /* Full width for each column */
+    margin-right: 0 !important; /* Remove margin between columns */
+    margin-bottom: 30px; /* Add space between stacked columns */
+  }
+}
+
+
+@media (max-width: 575px) {
+  .container.features {
+    padding: 20px 0 !important; 
+    width: 95% !important;
+  }
+}

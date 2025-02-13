@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* General Page Styling */
+  .container.bags {
+      margin-top: 0.9rem;
+      padding: 20px 0;
+      font-family: sans-serif;
+    }
+
+    
+    /* Product Card Styling */
+    .card.bag {
+      background-color: #fff;
+      text-align: left;
+      cursor: pointer;
+      
+    }
+    
+    .card:hover {
+      transform: scale(1.02);
+      transition: transform 0.3s ease;
+      box-shadow: 0 10px 15px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    #bag-h1{
+        font-family: 'Cormorant Garamond', serif;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .card-title{
+        font-weight: bold;
+    }
+
+    @media (min-width: 890px) and (max-width: 991px) {
+    #addtocart-product{
+      margin-right: 10px !important;
+      width: 30% !important;
+    }
+    
+    }

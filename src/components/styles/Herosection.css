@@ -1,0 +1,63 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px !important;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    height: 80vh !important;
+    background-size: cover;
+    overflow: hidden !important;
+    background-image: url("https://cdn.leonardo.ai/users/159eb96c-a1f0-4a20-a936-8bd1e6234082/generations/5fc42a3e-c294-4ccb-b838-b92c0909ad5a/Leonardo_Kino_XL_Create_a_visually_stunning_homepage_banner_fo_3.jpg");
+    margin-top: 75px !important;
+    
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    color: rgb(13, 185, 13);
+  }
+  
+  .hero-content p {
+    margin: 1rem 0; 
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  .btn-login {
+    background-color: rgb(195, 116, 51);
+    color: black;
+    padding: 8px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  
+  .btn-login:hover {
+    background-color:  rgb(211, 116, 38);
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .lead{
+    color: black;
+    font-size: 17px !important;
+  }
+
+  #hero-h1{
+    margin-top: 20px;
+  }
+
+  
+@media (max-width: 450px) {
+  .hero{
+    height: 280px !important;
+    margin-top: 60px !important;
+  }
+}
+  

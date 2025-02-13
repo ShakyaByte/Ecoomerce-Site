@@ -1,0 +1,178 @@
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 2rem !important;
+  background-color: #232f3e !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures navbar stays above other elements */
+  
+}
+
+.brandlogo {
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffc107;
+}
+
+.nav-link {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  color: rgb(227, 225, 225) !important;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px !important;
+}
+
+.search-input {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+}
+
+.cart-icon {
+  color: #ffc107;
+}
+
+.account-icon {
+  color: rgb(15, 177, 15);
+}
+
+/* Burger Menu Styles */
+.burger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* Mobile: Hide nav by default, toggle visibility on active */
+@media (max-width: 997px) {
+  .burger-menu {
+    display: block;
+  }
+
+  .nav {
+    display: none !important; /* Hide by default */
+  }
+
+  .nav.nav-active {
+    display: flex !important; /* Show when active */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #232f3e;
+    z-index: 999;
+  }
+
+  .nav-item {
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+
+  .brandlogo {
+    margin-left: 20px !important;
+  }
+}
+
+/* Tablet Adjustments */
+@media (max-width: 669px) {
+  .brandlogo {
+    font-size: 1rem !important;
+  }
+
+  .form-control {
+    font-size: 0.8rem !important;
+    padding: 0.5rem !important;
+  }
+
+  .navbar-actions {
+    gap: 0 !important;
+  }
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 552px) {
+  .brandlogo {
+    font-size: 0.8rem !important;
+  }
+
+  .form-control {
+    font-size: 0.7rem !important;
+    padding: 0.4rem !important;
+    width: 72% !important;
+  }
+
+  .navbar-actions {
+    gap: 0 !important;
+  }
+
+  .btn {
+    font-size: 0.7rem !important;
+    padding: 0.3rem 0.5rem !important;
+  }
+
+  .cart-icon,
+  .account-icon {
+    font-size: 18px !important; /* Smaller icons */
+  }
+
+  #search-form {
+    margin-right: 0 !important;
+  }
+
+  .navbar {
+    padding: 1rem 0.5rem !important;
+    width: 100% !important;
+  }
+}
+
+/* Very Small Screen Adjustments */
+@media (max-width: 427px) {
+  .brandlogo {
+    font-size: 0.7rem !important;
+  }
+
+  .form-control {
+    font-size: 0.6rem !important;
+    padding: 0.2rem !important;
+  }
+}
+
+@media (max-width: 399px) {
+  .brandlogo {
+    font-size: 0.6rem !important;
+    margin-left: 5px !important;
+  }
+
+  .form-control {
+    font-size: 0.5rem !important;
+    padding: 0.1rem !important;
+  }
+
+  .me-3.account-icon {
+    margin: 0 5px !important;
+}
+
+}

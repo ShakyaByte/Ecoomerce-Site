@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* General Page Styling */
+.container.furniture {
+    margin-top: 0.9rem;
+    padding: 20px 0;
+    font-family: sans-serif;
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Product Grid Styling */
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Product Card Styling */
+  .card {
+    background-color: #fff;
+    text-align: left;
+    cursor: pointer;
+    
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 15px 2px rgba(0, 0, 0, 0.4);
+  }
+  
+  .product-image {
+    width: 80%;
+    height: 15vh;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .product-description {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .product-price,
+  .product-rating {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .quantity-controls button {
+    padding: 5px 10px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .quantity-controls button:hover {
+    background-color: #bbb;
+  }
+  
+  .quantity-controls span {
+    font-size: 16px;
+  }
+  
+  /* Stock Status Styling */
+  .product-stock {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .product-stock.in-stock {
+    color: green;
+  }
+  
+  .product-stock.out-of-stock {
+    color: red;
+  }
+  
+
+#buy-button{
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  background-color: #4c5257;
+  color: white;
+}
+
+.text-success{
+    margin-bottom: 5px;
+}
+
+#books-h1{
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@media (min-width: 890px) and (max-width: 991px) {
+  .buttonbooks{
+    margin-right: 30px !important;
+  }
+  
+  }

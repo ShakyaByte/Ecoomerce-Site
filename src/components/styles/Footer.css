@@ -1,0 +1,198 @@
+/* Footer Styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer {
+    /*position: fixed;
+    bottom: 0 !important;*/
+    background-color: #212529;
+    color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px !important;
+    width: 100%;
+    
+    
+  }
+  
+  .footer-top {
+    padding: 40px 0;
+    border-bottom: 1px solid #343a40;
+  }
+  
+  .footer-bottom {
+    padding: 20px 0;
+    background-color: #181a1d;
+  }
+  
+  .footer-brand {
+    font-size: 1.8rem;
+    color: #ffc107;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-description {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #cbcfd3e0;
+  }
+  
+  .footer-title {
+    font-size: 1.2rem;
+    color: #ffc107;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-link {
+    font-size: 17px;
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-link:hover {
+    color: #ffc107;
+    text-decoration: underline;
+  }
+  
+  .footer-contact {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: rgb(201, 198, 198);
+  }
+  
+  .footer-contact i {
+    color: #ffc107;
+    margin-right: 10px;
+  }
+  
+  .social-icons {
+    margin-top: 15px;
+  }
+  
+  .social-link {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #adb5bd;
+    transition: color 0.3s;
+  }
+  
+  .social-link:hover {
+    color: #ffc107;
+  }
+
+  #logo-section{
+    width: 38% !important;
+    margin-right: 20px !important;
+  }
+
+  #quick-links{
+    margin-left: 10px !important;
+  }
+
+  .color-white{
+    color: rgb(219, 212, 212) !important;
+  }
+  
+  
+  @media (max-width: 991px) {
+    .footer-grid {
+      flex-direction: column;
+      align-items: center; /* Center all elements horizontally */
+      text-align: center; /* Center text within each section */
+    }
+  
+    .footer-section {
+      width: 100%; /* Full width for each section */
+      max-width: 600px; /* Increase width of description and other sections */
+      margin-bottom: 30px; /* Add spacing between sections */
+    }
+  
+    #logo-section {
+      width: 100% !important; /* Full width for the logo section */
+      margin-right: 0 !important; /* Remove margin */
+    }
+  
+    .footer-description {
+      width: 100%; /* Full width for the description */
+      text-align: justify; /* Justify the description text */
+      font-size: 1rem; /* Adjust font size if needed */
+    }
+  
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center quick links */
+    }
+  
+    .social-icons {
+      justify-content: center; /* Center social icons */
+    }
+  
+    .footer-contact {
+      text-align: center; /* Center contact information */
+    }
+  }
+
+  @media (max-width: 768px) {
+    
+  
+    #logo-section {
+      width: 100% !important;
+      margin-right: 0 !important;
+      text-align: center;
+    }
+  
+    
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .social-icons {
+      justify-content: center;
+      display: flex;
+      gap: 10px;
+    }
+  
+    .footer-contact {
+      text-align: center;
+    }
+
+    .footer-title{
+      text-align: center !important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #quick-links{
+      padding-right: 0 !important;
+      margin-left: 0 !important;
+    }
+  }
+
+
+  @media (min-width: 768px) and (max-width: 991px) {
+  
+  #phone{
+    margin-right: 40px !important;
+  }
+
+  .footer-links{
+    margin-right: 80px !important;
+  }
+  }
+
+  

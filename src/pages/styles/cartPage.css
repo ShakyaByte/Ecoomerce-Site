@@ -1,0 +1,8 @@
+.card-img-cart{
+    height: 300px !important;
+    object-fit: contain;
+}
+
+.card.cart{
+    cursor: pointer;
+}

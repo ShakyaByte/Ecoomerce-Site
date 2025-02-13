@@ -1,0 +1,206 @@
+/* General Page Styling */
+.page-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Product Grid Styling */
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Product Card Styling */
+  .card.furniture {
+   
+    background-color: #fff;
+    text-align: left;
+    
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 15px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .product-image {
+    width: 80%;
+    height: 15vh;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .product-description {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .product-price,
+  .product-rating {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .quantity-controls button {
+    padding: 5px 10px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .quantity-controls button:hover {
+    background-color: #bbb;
+  }
+  
+  .quantity-controls span {
+    font-size: 16px;
+  }
+  
+  /* Stock Status Styling */
+  .product-stock {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .product-stock.in-stock {
+    color: green;
+  }
+  
+  .product-stock.out-of-stock {
+    color: red;
+  }
+  
+
+#buy-button{
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  background-color: #4c5257;
+  color: white;
+}
+
+#h1-furniture{
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .container.furniture {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 98% !important;
+    width: 100% !important;
+    padding-left: 2% !important;
+    padding-right: 0 !important;
+  }
+
+  .card-footer{
+    gap: 20px !important;
+  }
+
+  #buy-button{
+    width: 28% !important;
+    
+    
+  }
+
+  .col{
+    width: 50% !important;
+     
+  }
+
+  #addtocart-product{
+    margin-right: 55px !important;
+    width: 25% !important;
+  }
+
+}
+
+@media (max-width: 890px) and (min-width: 769px) {
+
+  #addtocart-product{
+    margin-right: 30px !important;
+    width: 30% !important;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .col{
+    margin-left: 10px !important;
+    padding-right: 0 !important;
+    padding-left: 15px !important;
+    width: 85% !important;
+  }
+
+  .row.row-cols-1.row-cols-md-3.g-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Adjust spacing between stacked items */
+    width: 100%; /* Ensure each column takes full width */
+    max-width: 100%;
+    align-items: center !important;
+  }
+
+
+  #addtocart-product,
+  #buy-button {
+    width: 28% !important;
+}
+
+
+#addtocart-product{
+  margin-right: 40px !important;
+}
+}
+
+
+/* Screens between 400px and 450px */
+@media (min-width: 360px) and (max-width: 450px) {
+  #addtocart-product {
+    margin-right: 10px !important; /* Add margin to the right */
+  }
+}
+
+
+@media (min-width: 360px) and (max-width: 574px) {
+
+  #addtocart-product,
+  #buy-button {
+   padding: 10px !important;
+}
+
+}
+
+
