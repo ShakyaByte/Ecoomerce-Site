@@ -16,6 +16,8 @@ import BagPage from './pages/BagPage';
 import CartPage from './pages/CartPage';
 import AboutUs from './pages/AboutUsPage';
 import DeliveryPage from './pages/DeliveryPage';
+import RegisterPage from './authentication/RegisterPage';
+import LoginPage from './authentication/login';
 
 
 
@@ -57,9 +59,9 @@ function App() {
 
          <Route path="/delivery" element={<DeliveryPage/>} /> 
 
-         
-
-         
+         <Route path="/register" element={<RegisterPage/>} /> 
+        
+         <Route path="/login" element={<LoginPage/>} /> 
 
       </Routes>
       <Footer /> {/* Footer appears on all pages */}
